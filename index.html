@@ -8,11 +8,55 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-body { background-color: #0d0d0d; color: white; }
-.navbar { background-color: black; }
-.card { background-color: #1a1a1a; border: none; }
-.btn-primary { background-color: #ff3c00; border: none; }
-.hero { padding: 100px 20px; text-align: center; }
+body {
+  background-color: #0d0d0d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+img {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #ff3c00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ff1f00;
+}
+
+footer {
+  margin-top: 50px;
+}
 </style>
 </head>
 
@@ -32,34 +76,45 @@ body { background-color: #0d0d0d; color: white; }
 
   <div class="row">
 
+    <!-- GT3 -->
     <div class="col-md-4 mb-4">
       <div class="card p-3">
-        <h4>Porsche 911 GT3</h4>
+        <img src="https://images.unsplash.com/photo-1619767886558-efdc7b9e0473">
+        <h4 class="mt-3">Porsche 911 GT3</h4>
         <p>₱18,500,000</p>
         <p>3,000 km | 500 HP</p>
-        <button class="btn btn-primary">Inquire</button>
+        <button class="btn btn-primary w-100">Inquire</button>
       </div>
     </div>
 
+    <!-- Land Cruiser -->
     <div class="col-md-4 mb-4">
       <div class="card p-3">
-        <h4>Toyota Land Cruiser 300 ZX</h4>
+        <img src="https://images.unsplash.com/photo-1626668893637-0f6f2b6c2fba">
+        <h4 class="mt-3">Toyota Land Cruiser 300 ZX</h4>
         <p>₱5,648,000</p>
         <p>10 km | Brand New</p>
-        <button class="btn btn-primary">Inquire</button>
+        <button class="btn btn-primary w-100">Inquire</button>
       </div>
     </div>
 
+    <!-- Civic -->
     <div class="col-md-4 mb-4">
       <div class="card p-3">
-        <h4>Honda Civic Type R (FK8)</h4>
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+        <h4 class="mt-3">Honda Civic Type R (FK8)</h4>
         <p>₱3,200,000</p>
         <p>3,000 km | 400 HP</p>
-        <button class="btn btn-primary">Inquire</button>
+        <button class="btn btn-primary w-100">Inquire</button>
       </div>
     </div>
 
   </div>
+</section>
+
+<section class="text-center mt-5">
+  <h3>About Us</h3>
+  <p>Oneway Autohaus is a premium car marketplace offering high-performance and luxury vehicles with trusted deals.</p>
 </section>
 
 <footer class="text-center py-4">
